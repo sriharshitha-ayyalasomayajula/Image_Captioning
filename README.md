@@ -6,8 +6,10 @@ respectively. The model is then trained on the Flickr 8k dataset, which contains
 
 Requirements:
 The following libraries and packages are required to run the code: 
-● Python 3.x ● Tensor low ● NumPy
-● Matplotlib 
+*  Python 3.x 
+*  Tensor low 
+*   NumPy
+*   Matplotlib 
 
 To install these packages in anaconda environment, use the following commands: Tensor low:
 #create a conda environment and activate it

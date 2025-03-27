@@ -1,0 +1,11 @@
+flowchart TD
+    A[User in Teams] --> B[Clicks "Trigger RCA" or responds to bot]
+    B --> C[Teams Bot shows Adaptive Card Form (5W2H)]
+    C --> D[Fills the form and clicks "Submit RCA"]
+    D --> E[RCA Engine receives form data]
+    E --> F1[Retrieves context from Azure Search]
+    E --> F2[Sends query + context to Azure OpenAI]
+    E --> F3[Receives RCA output from GPT]
+    F3 --> G[Bot sends generated RCA summary as Adaptive Card]
+    G --> H[User gives feedback or confirms]
+    H --> I[Response + feedback stored in PostgreSQL]
